@@ -1,0 +1,25 @@
+plugins {
+    id 'application'
+}
+
+group 'lv.bta.homework'
+version '1.0-SNAPSHOT'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.3.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.3.1'
+
+    implementation 'com.google.guava:guava:29.0-jre'
+}
+
+application {
+    mainClass = 'Application'
+}
+
+test {
+    useJUnitPlatform()
+}
